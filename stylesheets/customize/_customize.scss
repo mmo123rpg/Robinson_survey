@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'Didot';
+  src: url('../fonts/Didot.ttc');
+}
+.content{
+	background:white;
+	padding:20px;
+	min-height:600px;
+}
+.content-2{
+	background:white;
+	padding:20px;
+	min-height:670px;
+}
+.slogan,p{
+	font-family: 'Didot';
+}
+p{
+	font-size:18px;
+}
+.height10{
+	height:10px;
+}
+.height20{
+	height:20px;
+}
+.height40{
+	height:40px;
+}
+.line{
+	border-bottom:1px solid black;
+}
+.survey-content{	
+	padding:20px;
+	min-height:600px;
+	@media (min-width: $screen-sm-min){
+		min-height:450px;
+	}
+}
+.content-1 {
+	min-height:305px;
+	padding:20px;
+	@media (min-width: $screen-sm-min){
+		padding:50px;
+	}	
+}
+.text-2{
+	font-size:16px;
+	font-weight:600;
+	color:#909090;
+}
+.title{	
+	font-family: 'Didot';
+	margin-left:50px;
+	@media (min-width: $screen-sm-min){
+		font-size:20px;
+	}
+}
+.title-circle{
+	&:before{
+	position: absolute;    
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid #6d6e71;	  
+	font-size: 24px;
+	font-weight: bold;
+	}	
+}
+.title-1{
+	&:before{
+		content:"1";	
+		left: 0px;
+    	top:-4px;	
+    	padding: 0px 13px;
+    	line-height: 29px;
+	}
+}
+.title-2{
+	&:before{
+		content:"2";	
+		left: 0px;
+    	top:10px;	
+    	padding: 0 12px;
+   		line-height: 27px;
+	}
+}
+.title-3{
+	&:before{
+		content:"3";	
+		left: 0px;
+    	top:22px;	
+    	padding: 0 11px;
+   		line-height: 35px;
+	}
+}
+.title-4{
+	&:before{
+		content:"4";	
+		left: 0px;
+    	top:26px;	
+    	padding: 0 11px;
+   		line-height: 29px;
+	}
+}
+.title-5{
+	&:before{
+		content:"5";	
+		left: 0px;
+    	top:10px;	
+    	padding: 0 12px;
+   		line-height: 36px;
+	}
+}
+.title-6{
+	&:before{
+		content:"6";	
+		left: 0px;
+    	top:24px;	
+    	padding: 0 10px;
+   		line-height: 35px;
+	}
+}
+#msform {
+    position: relative;
+}
+#msform fieldset {
+    position: absolute;
+    width:100%;
+    min-height:452px;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+/*buttons*/
+#msform .action-button {
+    width: 100px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+#progressbar{
+	li{
+		border-radius:50px;
+		border:1px solid #6d6e71;
+		font-size:24px;
+		font-family: 'Didot';
+		width:35px;height:35px;
+		font-weight:bold;
+		margin:0 25px;
+		&:nth-child(1){
+			padding: 0px 13px;
+    		line-height: 29px;
+		}
+		&:nth-child(2){
+			padding: 0px 12px;
+    		line-height: 27px;
+		}
+		&:nth-child(3){
+			padding: 0px 11px;
+    		line-height: 35px;
+		}
+		&:nth-child(4){
+			padding: 0px 11px;
+    		line-height: 29px;
+		}
+		&:nth-child(5){
+			padding: 0px 12px;
+    		line-height: 36px;
+		}
+		&:nth-child(6){
+			padding: 0px 10px;
+    		line-height: 35px;
+		}
+    	&.active{
+			background:#6d6e71;
+			color:white;
+    	}
+	}
+}
+.validation{
+	color:#ff8b00;
+	margin-top:6px;
+	display:block;
+}
+.shoescard-cc{
+	cursor:pointer;
+	background-size:contain;
+    background-repeat:no-repeat;
+    width:140px;
+    height:140px; 
+    @include transition(all .15s linear);  
+}
+.shoes1{
+	background-image:url(../img/Q3_opt1_white.png);	
+	&:hover{
+		background-image:url(../img/Q3_opt1_choice.png);	
+	}
+}
+.shoes2{
+	background-image:url(../img/Q3_opt2_white.png);	
+	&:hover{
+		background-image:url(../img/Q3_opt2_choice.png);	
+	}
+}
+.shoes3{
+	background-image:url(../img/Q3_opt3_white.png);	
+	&:hover{
+		background-image:url(../img/Q3_opt3_choice.png);	
+	}
+}
+.shoes4{
+	background-image:url(../img/Q3_opt4_white.png);	
+	&:hover{
+		background-image:url(../img/Q3_opt4_choice.png);	
+	}
+}
+
+.cc-selector{
+	margin:20px 0;
+	@media (min-width: $screen-sm-min){
+		margin:80px 0;
+	}
+    input[type="radio"]{
+    	margin:0;padding:0;
+    	-webkit-appearance:none;
+       		-moz-appearance:none;
+            	appearance:none;
+		&:checked{
+	    	+.shoes1{
+				background-image:url(../img/Q3_opt1_rollover.png);	
+	    	}
+	    	+.shoes2{
+				background-image:url(../img/Q3_opt2_rollover.png);	
+	    	}
+	    	+.shoes3{
+				background-image:url(../img/Q3_opt3_rollover.png);	
+	    	}
+	    	+.shoes4{
+				background-image:url(../img/Q3_opt4_rollover.png);	
+	    	}
+	    }
+    } 
+}
